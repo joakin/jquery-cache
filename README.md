@@ -37,4 +37,23 @@ has changed. When you want that you do:
 
     $c.refresh('entryName');
 
+What is this useful for?
+------------------------
+
+For starters all your selectors will be in the initialisation of your code
+together, so they are easier to change and identify without going through all
+your code. 
+
+It also uses a lazy retrieval so your selector will not be executed until the
+first time you call the cache to get the entry, so no extra jQuery selections
+and such.
+
+Anything else?
+--------------
+
+In a not far future I will add also the capability to accept jQuery objects
+when adding entries, if somebody wants to do that, I would be grateful.
+
+
+
 That's it for now, give it a try and bring us your comments.
